@@ -1,0 +1,53 @@
+ <div ng-controller = "AlbumListController">
+	
+	
+	<nav class="navbar navbar-dark bg-dark  ">
+		<div id = "search">
+		<span class="title"><h2> Album Search:</h2></span>
+		<p><input id = "input"type = "text" ng-model= "searchFor" size= "30" placeholder = "Type to search..."/> </p>
+		
+		<span class="title"><p>There are {{ myAlbums.length }} albums available to view:</p></span>
+		</div></nav>
+		<div class = "container">
+		<div class="album panel panel-primary" ng-repeat= "album in myAlbums | filter :{title:searchFor}|orderBy:'date'"> 
+			<div class= "panel-heading">
+				<a href="index.html#!/album/{{album.name}}">	{{album.title}} </a>
+				<div class = "date">{{album.date}} </div>
+			</div>
+			<div class= "description">
+			{{album.description}}
+			</div>
+
+
+		
+		</div>
+	
+
+
+		<div id = "form">
+			<h2> Add New Album:</h2>
+
+			<div class = "album panel panel-success">
+	`			<div class = "panel-heading">
+				<span style="color: red" ng-show = "error_message">{{error_message}}</span>
+				<form id="newAlbumForm">
+				<div class= "FormTitle"><p><input id = "title" type = "text"  ng-model = "adding_Album.title" placeholder = "Enter the title..."></p></div>
+				<div class= "Formdate"><p><input type = "text" id = "date" placeholder ="yyyy/mm/dd" ng-model = "adding_Album.date" ></p></div>		
+				</div>
+				<div class = "panelBody panel-body">
+
+				<textarea rows = "4" id = "description" ng-model = "adding_Album.description"  placeholder = "Enter the description..."></textarea>
+				<input type = "text" id = "name" ng-model = "adding_Album.name"  placeholder = "short name..">	
+				<button type="button" class="btn btn-primary btn-lg btn-block" ng-click = "addAlbums(adding_Album)">Add Album</button>
+				</form>	
+				</div>
+			</div>
+
+
+
+
+
+		</div>
+
+    </div>
+

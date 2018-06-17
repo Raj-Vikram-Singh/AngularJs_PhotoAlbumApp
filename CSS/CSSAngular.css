@@ -1,0 +1,197 @@
+body{
+margin: 0px;
+
+font-size: 1.5em;
+
+background: url('/Photos/background1.jpg') ;
+
+
+
+}
+
+
+/*.container{
+
+width:60%;
+
+height: auto;
+border: 2px solid orange;
+margin-top: 50px;
+margin-bottom: 50px;
+margin-right: auto;
+margin-left: auto;
+border-radius: 4px;
+font-size: 1.5em;
+
+}*/
+
+/*--------Present Album---------*/
+
+#form>h2{
+margin-left:1.5%;
+text-format: strong;
+}
+
+#input{
+font-size: 1em;
+border-radius: 4px;
+border: 2px solid grey;
+
+}
+
+#search{
+padding:13px;
+font-size: 1.5em;
+}
+
+.album{
+
+min-height: 175px;
+width:300px;
+display: inline-block;
+margin: 15px;
+font-size: 1.5em;
+
+}
+
+
+
+.description{
+ padding:5px;
+
+
+}
+
+
+.date{
+float:right;
+font-size: .85em;
+}
+
+#input:hover{
+border: 2px solid lightblue;
+
+}
+
+
+/*--------Add Album--------*/
+
+.panel-success{
+border: 1px solid lightgreen;
+}
+
+.Formdate input{
+
+border-radius:4px;
+width: 35%;
+margin-left: 5%;
+display:inline;
+font-size: 1em;
+
+}
+
+.FormTitle input{
+width:60%;
+float:left;
+border-radius:4px;
+
+
+}
+
+.panelBody textarea {
+
+margin-top: 10px;
+margin-bottom: 10px;
+width:100%;
+border-radius:4px;
+font-size: 1em;
+}
+
+.panelBody input{
+margin-bottom: 10px;
+width:100%;
+border-radius:4px;
+font-size: 1em;
+}
+
+
+
+/*---------------*/
+.responsive {
+    padding: 6px;
+    
+    width: 24.99999%;
+    margin-right: 0%;
+   margin-left: 8%;
+   margin-top: 5%;
+
+    
+}
+
+#thumbnail {
+
+	
+	height: 100%;
+	
+	
+	}
+#thumbnail img{
+	width: 100%;
+	height: auto;
+	height:300px;
+	border-radius: 5px 5px 0 0;
+	
+}
+#caption{
+	text-align: center;
+	padding: 15px;
+	border: 2px solid grey;
+	border-radius: 0 0 5px 5px;
+
+}
+
+.panel-heading a{
+	text-decoration: none;
+	color: white;
+}
+
+.panel-heading a:hover{
+	text-decoration: underline;
+	color: white;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+        margin: 6px 0;
+    }
+}
+
+
+/*----------------Image-----------*/
+
+
+
+.bn{
+
+	margin-left: 77%;
+
+}
+.img{
+
+	margin-top: 5px;
+	margin-left: 9%;
+
+}
+.title{
+	font-size: 20px;
+	color: white;
+
+	
+}
